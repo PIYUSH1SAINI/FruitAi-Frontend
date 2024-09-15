@@ -5,8 +5,8 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
 const Login = () => {
-    const demoEmail = "demo@example.com";
-    const demoPassword = "password123";
+    const demoEmail = "demo@gmail.com";
+    const demoPassword = "Demo123";
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -24,7 +24,7 @@ const Login = () => {
             setErrorMessage(''); // Clear error message
             navigate('/home');  // Navigate to the home page after successful login
         } else {
-            setErrorMessage("Invalid email or password. Try using 'demo@example.com' and 'password123'");
+            setErrorMessage("Invalid email or password. Try using 'demo@gmail.com' and 'Demo123'");
         }
     };
 
